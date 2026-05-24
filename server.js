@@ -2,19 +2,19 @@ const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 
-app.use('/', createProxyMiddleware({
-    target: 'https://www.google.com', // الافتراضي
-    changeOrigin: true,
-    router: (req) => {
-        // يسمح بالانتقال لأي رابط يتم إرساله
-        const url = req.url.substring(1);
-        return url.startsWith('http') ? url : 'https://' + url;
-    },
-    onProxyReq: (proxyReq, req) => {
-        // حذف الهيدرز التي تسبب المشاكل
-        proxyReq.removeHeader('origin');
-        proxyReq.removeHeader('referer');
-    }
-}));
+// إعداد البروكسي لاستقبال الرابط المشفر
+app.use('/proxy', (req, res, next) => {
+    const target = req.query.url; // الرابط يأتي كـ query parameter
+    if (!target) return res.status(400).send('Missing url parameter');
+    
+    createProxyMiddleware({
+        target: target,
+        changeOrigin: true,
+        onProxyReq: (proxyReq, req) => {
+            proxyReq.removeHeader('origin');
+            proxyReq.removeHeader('referer');
+        }
+    })(req, res, next);
+});
 
 app.listen(process.env.PORT || 3000);
