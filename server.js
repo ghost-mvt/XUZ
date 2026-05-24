@@ -5,19 +5,14 @@ const app = express();
 app.use('/', createProxyMiddleware({
     changeOrigin: true,
     router: (req) => {
-        // استخراج الرابط من المسار
         const target = req.url.substring(1);
+        // إذا كان الرابط لا يبدأ بـ http/https أو كان حرفاً واحداً، وجهه لجوجل
+        if (!target || target.length <= 2) return 'https://www.google.com';
         return target.startsWith('http') ? target : 'https://' + target;
     },
-    onProxyRes: (proxyRes, req, res) => {
-        // حذف القيود الأمنية التي تمنع فتح المواقع في iframe
+    onProxyRes: (proxyRes) => {
         delete proxyRes.headers['x-frame-options'];
         delete proxyRes.headers['content-security-policy'];
-        proxyRes.headers['access-control-allow-origin'] = '*';
-    },
-    onProxyReq: (proxyReq) => {
-        proxyReq.removeHeader('origin');
-        proxyReq.removeHeader('referer');
     }
 }));
 
