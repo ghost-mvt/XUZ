@@ -2,20 +2,21 @@ const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 
-// هذا المسار سيجعل أي طلب يُرسل للسيرفر يُعاد توجيهه للهدف
 app.use('/', createProxyMiddleware({
-    target: 'https://www.google.com', // افتراضي
+    target: 'https://www.google.com',
     changeOrigin: true,
     router: (req) => {
-        // يأخذ الرابط من مسار الطلب ويقوم بتوجيهه
-        const targetUrl = req.url.substring(1); 
-        return targetUrl.startsWith('http') ? targetUrl : 'https://' + targetUrl;
+        const target = req.url.substring(1);
+        return target.startsWith('http') ? target : 'https://' + target;
     },
-    onProxyReq: (proxyReq, req) => {
-        // حذف الهيدرز التي تسبب حظر الطلبات
+    onProxyRes: (proxyRes, req, res) => {
+        // هذه الخطوة هي الأهم: حذف قيود الأمان التي تمنع الـ iframe
+        delete proxyRes.headers['x-frame-options'];
+        delete proxyRes.headers['content-security-policy'];
+    },
+    onProxyReq: (proxyReq) => {
         proxyReq.removeHeader('origin');
         proxyReq.removeHeader('referer');
-        proxyReq.removeHeader('x-requested-with');
     }
 }));
 
