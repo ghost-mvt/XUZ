@@ -1,11 +1,20 @@
-// server.js (الكود الذي ترفعه على الخادم المجاني)
-const host = '0.0.0.0';
-const port = process.env.PORT || 3000;
+const express = require('express');
+const { createProxyMiddleware } = require('http-proxy-middleware');
+const app = express();
 
-require('cors-anywhere').createServer({
-    originWhitelist: [], // للمطورين: اتركها فارغة للسماح بكل المصادر (أو حدد نطاقك)
-    requireHeader: ['origin', 'x-requested-with'],
-    removeHeaders: ['cookie', 'cookie2']
-}).listen(port, host, () => {
-    console.log('Running Proxy on ' + host + ':' + port);
-});
+app.use('/', createProxyMiddleware({
+    target: 'https://www.google.com', // الافتراضي
+    changeOrigin: true,
+    router: (req) => {
+        // يسمح بالانتقال لأي رابط يتم إرساله
+        const url = req.url.substring(1);
+        return url.startsWith('http') ? url : 'https://' + url;
+    },
+    onProxyReq: (proxyReq, req) => {
+        // حذف الهيدرز التي تسبب المشاكل
+        proxyReq.removeHeader('origin');
+        proxyReq.removeHeader('referer');
+    }
+}));
+
+app.listen(process.env.PORT || 3000);
