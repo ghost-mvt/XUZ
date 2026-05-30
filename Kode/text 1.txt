@@ -1,0 +1,13 @@
+pkg install mariadb -y
+
+mysql_install_db
+
+mkdir var/lib/mysql/target_db
+
+cp data.MYD data.MYI user.MYI $PREFIXvar/lib/mysql/target_db
+
+chmod 777 $PREFIX/var/lib/mysql/target_db
+
+mariadbd-safe &
+
+mariadbd-safe &
