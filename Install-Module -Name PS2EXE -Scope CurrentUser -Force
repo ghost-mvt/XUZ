@@ -1,1 +1,0 @@
-powershell -Command "Install-Module -Name PS2EXE -Scope CurrentUser -Force"
