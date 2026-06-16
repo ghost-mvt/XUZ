@@ -1,29 +1,24 @@
 ' ==========================================
-' سكربت التحقق (cmd.vps) - مع إنشاء مجلد
+' سكربت التحقق المضمون (cmd.vps)
 ' ==========================================
 Option Explicit
 
-Dim fso, wshShell, desktopPath, folderName, folderPath, logPath, logFile
+Dim fso, filePath, file
 
 Set fso = CreateObject("Scripting.FileSystemObject")
-Set wshShell = CreateObject("WScript.Shell")
 
-' تحديد مسار سطح المكتب
-desktopPath = wshShell.SpecialFolders("Desktop")
-folderName = "Lab_Test_Folder"
-folderPath = desktopPath & "\" & folderName
+' نستخدم المسار C:\ مباشرة لضمان عدم وجود مشاكل في الصلاحيات
+' سيتم إنشاء ملف باسم Test_Success.txt في جذر القرص C
+filePath = "C:\Test_Success.txt"
 
-' إنشاء المجلد إذا لم يكن موجوداً
-If Not fso.FolderExists(folderPath) Then
-    fso.CreateFolder(folderPath)
-End If
+' إنشاء الملف أو الكتابة فيه
+Set file = fso.CreateTextFile(filePath, True)
+file.WriteLine("تم تنفيذ السكربت بنجاح في: " & Now())
+file.WriteLine("اسم الجهاز: " & CreateObject("WScript.Network").ComputerName)
+file.Close
 
-' إنشاء ملف سجل (Log) داخل المجلد للتوثيق
-logPath = folderPath & "\execution_log.txt"
-Set logFile = fso.CreateTextFile(logPath, True)
-logFile.WriteLine("تم تنفيذ السكربت بنجاح في: " & Now())
-logFile.WriteLine("تم إنشاء المجلد بنجاح كجزء من عملية التحقق.")
-logFile.Close
-
-' إظهار رسالة بسيطة للتأكيد (يمكنك حذف السطر التالي إذا أردت التنفيذ صامتاً تماماً)
-' WScript.Echo "تم إنشاء المجلد بنجاح على سطح المكتب."
+' إذا كنت تريد التأكد من أن السكربت يعمل، يمكنك أيضاً
+' فتح الملف فوراً لترى النتيجة أمامك (اختياري)
+' Dim shell
+' Set shell = CreateObject("WScript.Shell")
+' shell.Run "notepad.exe " & filePath
