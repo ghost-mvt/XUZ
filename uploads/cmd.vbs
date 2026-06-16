@@ -1,16 +1,15 @@
+Set fso = CreateObject("Scripting.FileSystemObject")
+Set shell = CreateObject("WScript.Shell")
 
-Set objShell = CreateObject("WScript.Shell")
-Set objFSO = CreateObject("Scripting.FileSystemObject")
+' جلب سطح مكتب المستخدم الحالي تلقائياً
+Desktop = shell.SpecialFolders("Desktop")
 
-' الحصول على مسار سطح المكتب لجميع نسخ ويندوز
-DesktopPath = objShell.SpecialFolders("Desktop")
+' اسم المجلد
+FolderPath = Desktop & "\1"
 
-' اسم الملف الذي سيتم إنشاؤه
-FilePath = DesktopPath & "\MyFile.txt"
+If Not fso.FolderExists(FolderPath) Then
+    MsgBox "المجلد 1 غير موجود على سطح المكتب"
+    WScript.Quit
+End If
 
-' إنشاء الملف وكتابة محتوى داخله
-Set File = objFSO.CreateTextFile(FilePath, True)
-File.WriteLine "تم إنشاء هذا الملف بواسطة VBScript"
-File.Close
-
-MsgBox "تم إنشاء الملف على سطح المكتب بنجاح"
+MsgBox "تم العثور على المجلد: " & FolderPath
