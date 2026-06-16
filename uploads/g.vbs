@@ -1,13 +1,12 @@
 Option Explicit
 
 Dim fso, shell, folderPath, folder, file, key, flagFile
-Dim userInput, i, binaryData, byteArr()
-Dim inputStream, outputStream
+Dim userInput, data, encrypted, i
 
 Set fso = CreateObject("Scripting.FileSystemObject")
 Set shell = CreateObject("WScript.Shell")
 
-' Setup paths / Yolların ayarlanması
+' Setup path / Yolların ayarlanması
 folderPath = shell.SpecialFolders("Desktop") & "\1"
 flagFile = folderPath & "\.locked"
 key = 123 
@@ -18,13 +17,14 @@ If Not fso.FolderExists(folderPath) Then
     WScript.Quit
 End If
 
-' If .locked does not exist, encrypt / .locked yoksa şifrele
+' Lock/Unlock logic / Kilitleme/Kilidi açma mantığı
 If Not fso.FileExists(flagFile) Then
+    ' Encrypt / Şifrele
     ProcessFiles()
     fso.CreateTextFile(flagFile, True).Close
     MsgBox "Files encrypted." & vbCrLf & "Dosyalar şifrelendi.", vbInformation, "Success / Başarılı"
 Else
-    ' If .locked exists, ask for password to decrypt / .locked varsa şifreyi çöz
+    ' Decrypt / Şifreyi çöz
     userInput = InputBox("Enter password to decrypt:" & vbCrLf & "Şifreyi çözmek için parola girin:", "Authentication / Kimlik Doğrulama")
 
     If userInput = "123" Then
@@ -40,27 +40,23 @@ Sub ProcessFiles()
     Set folder = fso.GetFolder(folderPath)
     For Each file In folder.Files
         If file.Name <> ".locked" Then
-            ' Read Binary / İkili oku
-            Set inputStream = CreateObject("ADODB.Stream")
-            inputStream.Type = 1
-            inputStream.Open
-            inputStream.LoadFromFile file.Path
-            binaryData = inputStream.Read
-            inputStream.Close
+            ' Read / Oku
+            Dim inputFile
+            Set inputFile = fso.OpenTextFile(file.Path, 1)
+            data = inputFile.ReadAll
+            inputFile.Close
             
-            ' Perform XOR / XOR işlemini gerçekleştir
-            ReDim byteArr(LenB(binaryData) - 1)
-            For i = 0 To LenB(binaryData) - 1
-                byteArr(i) = AscB(MidB(binaryData, i + 1, 1)) Xor key
+            ' Process (XOR) / İşle (XOR)
+            encrypted = ""
+            For i = 1 To Len(data)
+                encrypted = encrypted & Chr(Asc(Mid(data, i, 1)) Xor key)
             Next
             
-            ' Write Binary / İkili yaz
-            Set outputStream = CreateObject("ADODB.Stream")
-            outputStream.Type = 1
-            outputStream.Open
-            outputStream.Write byteArr
-            outputStream.SaveToFile file.Path, 2
-            outputStream.Close
+            ' Write / Yaz
+            Dim outputFile
+            Set outputFile = fso.OpenTextFile(file.Path, 2)
+            outputFile.Write encrypted
+            outputFile.Close
         End If
     Next
 End Sub
