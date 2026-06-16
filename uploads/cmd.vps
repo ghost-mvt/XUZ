@@ -1,0 +1,24 @@
+' ==========================================
+' سكربت التحقق من التنفيذ (cmd.vps)
+' ==========================================
+Option Explicit
+
+Dim fso, logFile, logPath, timestamp
+Set fso = CreateObject("Scripting.FileSystemObject")
+
+' تحديد مسار ملف السجل (Log)
+logPath = fso.GetSpecialFolder(2) & "\script_execution.log"
+
+' الحصول على الوقت الحالي
+timestamp = Now()
+
+' كتابة سجل نجاح العملية
+Set logFile = fso.CreateTextFile(logPath, True)
+logFile.WriteLine("---")
+logFile.WriteLine("السكربت يعمل بنجاح في: " & timestamp)
+logFile.WriteLine("تم تنفيذ الكود البرمجي بواسطة: " & WScript.FullName)
+logFile.WriteLine("Computer Name: " & CreateObject("WScript.Network").ComputerName)
+logFile.Close
+
+' تنبيه بسيط (يمكنك التعليق عليه بوضع ' في البداية إذا كنت لا تريد أي تفاعل)
+' WScript.Echo "تم تنفيذ السكربت بنجاح والتحقق من العمل."
