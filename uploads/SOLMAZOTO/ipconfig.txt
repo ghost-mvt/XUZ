@@ -12,6 +12,11 @@ Wireless LAN adapter Yerel Ağ Bağlantısı* 1:
    Media State . . . . . . . . . . . : Media disconnected
    Connection-specific DNS Suffix  . : 
 
+Wireless LAN adapter Yerel Ağ Bağlantısı* 10:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
 Ethernet adapter VMware Network Adapter VMnet1:
 
    Connection-specific DNS Suffix  . : 
