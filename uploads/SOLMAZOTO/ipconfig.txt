@@ -44,8 +44,8 @@ Ethernet adapter VMware Network Adapter VMnet1:
    Link-local IPv6 Address . . . . . : fe80::58c1:e2eb:bc67:b4ca%6(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.101.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 17 Haziran 2026 Äarüamba 13:17:37
-   Lease Expires . . . . . . . . . . : 17 Haziran 2026 Äarüamba 13:47:37
+   Lease Obtained. . . . . . . . . . : 17 Haziran 2026 Äarüamba 13:20:30
+   Lease Expires . . . . . . . . . . : 17 Haziran 2026 Äarüamba 13:50:22
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.101.254
    DHCPv6 IAID . . . . . . . . . . . : 721440854
@@ -65,8 +65,8 @@ Ethernet adapter VMware Network Adapter VMnet8:
    Link-local IPv6 Address . . . . . : fe80::ec3a:7929:5e17:a561%11(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.237.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 17 Haziran 2026 Äarüamba 13:17:37
-   Lease Expires . . . . . . . . . . : 17 Haziran 2026 Äarüamba 13:47:37
+   Lease Obtained. . . . . . . . . . : 17 Haziran 2026 Äarüamba 13:20:22
+   Lease Expires . . . . . . . . . . : 17 Haziran 2026 Äarüamba 13:50:22
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.237.254
    DHCPv6 IAID . . . . . . . . . . . : 738218070
@@ -88,7 +88,7 @@ Wireless LAN adapter Wi-Fi:
    IPv4 Address. . . . . . . . . . . : 192.168.1.107(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
    Lease Obtained. . . . . . . . . . : 17 Haziran 2026 Äarüamba 12:44:44
-   Lease Expires . . . . . . . . . . : 17 Haziran 2026 Äarüamba 14:17:37
+   Lease Expires . . . . . . . . . . : 17 Haziran 2026 Äarüamba 14:20:23
    Default Gateway . . . . . . . . . : 192.168.1.1
    DHCP Server . . . . . . . . . . . : 192.168.1.1
    DHCPv6 IAID . . . . . . . . . . . : 156957220
