@@ -1,0 +1,25 @@
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : NROVOPP96476889
+   Primary Dns Suffix  . . . . . . . : NROVOPP96476889.local
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : NROVOPP96476889.local
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Realtek PCIe GBE Family Controller
+   Physical Address. . . . . . . . . : 60-02-92-2E-D4-8B
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::617f:71e9:7a6c:9841%14(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.180.149(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.180.250
+   DHCPv6 IAID . . . . . . . . . . . : 56623762
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-31-43-33-1D-60-02-92-1F-EB-21
+   DNS Servers . . . . . . . . . . . : 192.168.180.250
+   NetBIOS over Tcpip. . . . . . . . : Enabled
