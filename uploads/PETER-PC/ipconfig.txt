@@ -1,0 +1,28 @@
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : PETER-PC
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : local
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : local
+   Description . . . . . . . . . . . : Intel(R) 82574L Gigabit Network Connection
+   Physical Address. . . . . . . . . : 18-66-DA-12-34-56
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::9873:d061:e60:c91d%3(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 172.20.0.2(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : Monday, March 2, 2026 4:43:25 PM
+   Lease Expires . . . . . . . . . . : Thursday, June 18, 2026 1:35:44 AM
+   Default Gateway . . . . . . . . . : 172.20.0.1
+   DHCP Server . . . . . . . . . . . : 172.20.0.1
+   DHCPv6 IAID . . . . . . . . . . . : 51930842
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-25-0D-86-41-18-66-DA-12-34-56
+   DNS Servers . . . . . . . . . . . : 8.8.8.8
+   NetBIOS over Tcpip. . . . . . . . : Enabled
