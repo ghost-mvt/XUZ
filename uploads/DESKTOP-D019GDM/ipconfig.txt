@@ -1,0 +1,45 @@
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : DESKTOP-D019GDM
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Intel(R) I350 Gigabit Backplane Connection
+   Physical Address. . . . . . . . . : AC-1F-6B-D0-4C-68
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::ded:403:794d:9a89%8(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.1.115(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : Wednesday, June 17, 2026 3:22:45 AM
+   Lease Expires . . . . . . . . . . : Saturday, July 24, 2162 9:52:53 AM
+   Default Gateway . . . . . . . . . : 192.168.1.1
+   DHCP Server . . . . . . . . . . . : 192.168.1.1
+   DHCPv6 IAID . . . . . . . . . . . : 78389099
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-31-C3-CB-7C-AC-1F-6B-D0-4C-68
+   DNS Servers . . . . . . . . . . . : 192.168.1.1
+   NetBIOS over Tcpip. . . . . . . . : Disabled
+
+Ethernet adapter Ethernet 2:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Intel(R) I350 Gigabit Backplane Connection #2
+   Physical Address. . . . . . . . . : AC-1F-6B-D0-4C-69
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::646a:45fa:67f9:faa4%7(Preferred) 
+   Autoconfiguration IPv4 Address. . : 169.254.250.164(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Default Gateway . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 111943531
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-31-C3-CB-7C-AC-1F-6B-D0-4C-68
+   DNS Servers . . . . . . . . . . . : fec0:0:0:ffff::1%1
+                                       fec0:0:0:ffff::2%1
+                                       fec0:0:0:ffff::3%1
+   NetBIOS over Tcpip. . . . . . . . : Enabled
