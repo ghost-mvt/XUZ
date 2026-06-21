@@ -1,0 +1,24 @@
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : Lnnrcalk
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Realtek RTL8139C+ Fast Ethernet NIC
+   Physical Address. . . . . . . . . : D6-4E-AC-88-F7-70
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::9d73:9311:9c2e:3ea6%3(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 10.127.0.17(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Default Gateway . . . . . . . . . : 10.127.0.1
+   DHCPv6 IAID . . . . . . . . . . . : 58107621
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-31-C4-C0-FE-D6-4E-AC-88-F7-70
+   DNS Servers . . . . . . . . . . . : 8.8.8.8
+   NetBIOS over Tcpip. . . . . . . . : Enabled
