@@ -1,0 +1,28 @@
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : DESKTOP-EIWAI7B
+   Primary Dns Suffix  . . . . . . . : domain
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Ethernet adapter Ethernet Instance 0 3:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Intel(R) 82574L Gigabit Network Connection
+   Physical Address. . . . . . . . . : 52-54-00-CA-CA-0E
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::4938:f2f4:539e:aa1%8(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.8.14(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.240.0
+   Lease Obtained. . . . . . . . . . : Tuesday, March 24, 2026 3:00:15 PM
+   Lease Expires . . . . . . . . . . : Sunday, June 21, 2026 2:56:23 AM
+   Default Gateway . . . . . . . . . : 192.168.15.254
+   DHCP Server . . . . . . . . . . . : 192.168.15.254
+   DHCPv6 IAID . . . . . . . . . . . : 139613184
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-30-96-B5-5C-52-54-00-12-34-56
+   DNS Servers . . . . . . . . . . . : 1.1.1.1
+                                       8.8.8.8
+   NetBIOS over Tcpip. . . . . . . . : Enabled
