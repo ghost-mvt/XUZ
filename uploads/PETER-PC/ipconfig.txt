@@ -1,1 +1,1 @@
-Get-ChildItem $env:APPDATA -Recurse -Filter "*screenshot*" -ErrorAction SilentlyContinue
+Remove-Item "$env:APPDATA\Microsoft\Windows\Recent\screenshot_bot.lnk" -Force -ErrorAction SilentlyContinue
