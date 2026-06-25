@@ -1,0 +1,88 @@
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : SolmazOto
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Intel(R) Ethernet Connection (3) I218-LM
+   Physical Address. . . . . . . . . : 50-7B-9D-7B-62-3B
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Yerel Aß Baßlantçsç* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   Physical Address. . . . . . . . . : 18-5E-0F-6F-80-A7
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Ethernet adapter VMware Network Adapter VMnet1:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet1
+   Physical Address. . . . . . . . . : 00-50-56-C0-00-01
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::58c1:e2eb:bc67:b4ca%6(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.101.1(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : 25 Haziran 2026 Perüembe 20:48:25
+   Lease Expires . . . . . . . . . . : 25 Haziran 2026 Perüembe 21:18:25
+   Default Gateway . . . . . . . . . : 
+   DHCP Server . . . . . . . . . . . : 192.168.101.254
+   DHCPv6 IAID . . . . . . . . . . . : 721440854
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-27-41-98-00-50-7B-9D-7B-62-3B
+   DNS Servers . . . . . . . . . . . : fec0:0:0:ffff::1%1
+                                       fec0:0:0:ffff::2%1
+                                       fec0:0:0:ffff::3%1
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Ethernet adapter VMware Network Adapter VMnet8:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet8
+   Physical Address. . . . . . . . . : 00-50-56-C0-00-08
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::ec3a:7929:5e17:a561%11(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.237.1(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : 25 Haziran 2026 Perüembe 20:48:25
+   Lease Expires . . . . . . . . . . : 25 Haziran 2026 Perüembe 21:18:25
+   Default Gateway . . . . . . . . . : 
+   DHCP Server . . . . . . . . . . . : 192.168.237.254
+   DHCPv6 IAID . . . . . . . . . . . : 738218070
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-27-41-98-00-50-7B-9D-7B-62-3B
+   DNS Servers . . . . . . . . . . . : fec0:0:0:ffff::1%1
+                                       fec0:0:0:ffff::2%1
+                                       fec0:0:0:ffff::3%1
+   Primary WINS Server . . . . . . . : 192.168.237.2
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Intel(R) Dual Band Wireless-AC 7265
+   Physical Address. . . . . . . . . : EE-A9-A1-38-5F-50
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::ea9a:6d64:5d84:5c21%9(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.0.105(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : 25 Haziran 2026 Perüembe 20:48:27
+   Lease Expires . . . . . . . . . . : 25 Haziran 2026 Perüembe 22:48:26
+   Default Gateway . . . . . . . . . : 192.168.0.1
+   DHCP Server . . . . . . . . . . . : 192.168.0.1
+   DHCPv6 IAID . . . . . . . . . . . : 166635937
+   DHCPv6 Client DUID. . . . . . . . : 00-03-00-01-EE-A9-A1-38-5F-50
+   DNS Servers . . . . . . . . . . . : 192.168.0.1
+   NetBIOS over Tcpip. . . . . . . . : Enabled
