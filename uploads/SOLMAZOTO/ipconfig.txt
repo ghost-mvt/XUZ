@@ -36,7 +36,7 @@ Ethernet adapter VMware Network Adapter VMnet1:
    IPv4 Address. . . . . . . . . . . : 192.168.101.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
    Lease Obtained. . . . . . . . . . : 25 Haziran 2026 PerŸembe 20:45:29
-   Lease Expires . . . . . . . . . . : 25 Haziran 2026 PerŸembe 21:15:29
+   Lease Expires . . . . . . . . . . : 25 Haziran 2026 PerŸembe 21:15:30
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.101.254
    DHCPv6 IAID . . . . . . . . . . . : 721440854
@@ -57,7 +57,7 @@ Ethernet adapter VMware Network Adapter VMnet8:
    IPv4 Address. . . . . . . . . . . : 192.168.237.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
    Lease Obtained. . . . . . . . . . : 25 Haziran 2026 PerŸembe 20:45:29
-   Lease Expires . . . . . . . . . . : 25 Haziran 2026 PerŸembe 21:15:29
+   Lease Expires . . . . . . . . . . : 25 Haziran 2026 PerŸembe 21:15:30
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.237.254
    DHCPv6 IAID . . . . . . . . . . . : 738218070
