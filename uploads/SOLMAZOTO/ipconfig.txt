@@ -44,8 +44,8 @@ Ethernet adapter VMware Network Adapter VMnet1:
    Link-local IPv6 Address . . . . . : fe80::58c1:e2eb:bc67:b4ca%6(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.101.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 25 Haziran 2026 PerŸembe 20:40:59
-   Lease Expires . . . . . . . . . . : 25 Haziran 2026 PerŸembe 21:10:59
+   Lease Obtained. . . . . . . . . . : 25 Haziran 2026 PerŸembe 20:41:00
+   Lease Expires . . . . . . . . . . : 25 Haziran 2026 PerŸembe 21:11:00
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.101.254
    DHCPv6 IAID . . . . . . . . . . . : 721440854
@@ -65,8 +65,8 @@ Ethernet adapter VMware Network Adapter VMnet8:
    Link-local IPv6 Address . . . . . : fe80::ec3a:7929:5e17:a561%11(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.237.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 25 Haziran 2026 PerŸembe 20:41:13
-   Lease Expires . . . . . . . . . . : 25 Haziran 2026 PerŸembe 21:10:59
+   Lease Obtained. . . . . . . . . . : 25 Haziran 2026 PerŸembe 20:41:14
+   Lease Expires . . . . . . . . . . : 25 Haziran 2026 PerŸembe 21:11:00
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.237.254
    DHCPv6 IAID . . . . . . . . . . . : 738218070
@@ -87,8 +87,8 @@ Wireless LAN adapter Wi-Fi:
    Link-local IPv6 Address . . . . . : fe80::ea9a:6d64:5d84:5c21%9(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.0.105(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 25 Haziran 2026 PerŸembe 20:41:04
-   Lease Expires . . . . . . . . . . : 25 Haziran 2026 PerŸembe 22:41:04
+   Lease Obtained. . . . . . . . . . : 25 Haziran 2026 PerŸembe 20:41:05
+   Lease Expires . . . . . . . . . . : 25 Haziran 2026 PerŸembe 22:41:05
    Default Gateway . . . . . . . . . : 192.168.0.1
    DHCP Server . . . . . . . . . . . : 192.168.0.1
    DHCPv6 IAID . . . . . . . . . . . : 166635937
