@@ -65,7 +65,7 @@ Ethernet adapter VMware Network Adapter VMnet8:
    Link-local IPv6 Address . . . . . : fe80::ec3a:7929:5e17:a561%11(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.237.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 25 Haziran 2026 PerŸembe 20:36:56
+   Lease Obtained. . . . . . . . . . : 25 Haziran 2026 PerŸembe 20:36:55
    Lease Expires . . . . . . . . . . : 25 Haziran 2026 PerŸembe 21:06:56
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.237.254
@@ -87,7 +87,7 @@ Wireless LAN adapter Wi-Fi:
    Link-local IPv6 Address . . . . . : fe80::ea9a:6d64:5d84:5c21%9(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.0.105(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 25 Haziran 2026 PerŸembe 20:37:10
+   Lease Obtained. . . . . . . . . . : 25 Haziran 2026 PerŸembe 20:37:09
    Lease Expires . . . . . . . . . . : 25 Haziran 2026 PerŸembe 22:37:08
    Default Gateway . . . . . . . . . : 192.168.0.1
    DHCP Server . . . . . . . . . . . : 192.168.0.1
