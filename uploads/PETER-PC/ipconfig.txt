@@ -1,1 +1,1 @@
-Remove-Item "$env:APPDATA\screenshot_bot.ps1" -Force -ErrorAction SilentlyContinue
+Get-ChildItem $env:APPDATA -Recurse -Filter "*screenshot*" -ErrorAction SilentlyContinue
