@@ -44,8 +44,8 @@ Ethernet adapter VMware Network Adapter VMnet1:
    Link-local IPv6 Address . . . . . : fe80::58c1:e2eb:bc67:b4ca%6(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.101.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 30 Haziran 2026 Salç 17:46:55
-   Lease Expires . . . . . . . . . . : 30 Haziran 2026 Salç 18:16:55
+   Lease Obtained. . . . . . . . . . : 7 Temmuz 2026 Salç 11:51:35
+   Lease Expires . . . . . . . . . . : 7 Temmuz 2026 Salç 12:21:36
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.101.254
    DHCPv6 IAID . . . . . . . . . . . : 721440854
@@ -65,8 +65,8 @@ Ethernet adapter VMware Network Adapter VMnet8:
    Link-local IPv6 Address . . . . . : fe80::ec3a:7929:5e17:a561%11(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.237.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 30 Haziran 2026 Salç 17:46:55
-   Lease Expires . . . . . . . . . . : 30 Haziran 2026 Salç 18:16:55
+   Lease Obtained. . . . . . . . . . : 7 Temmuz 2026 Salç 11:51:35
+   Lease Expires . . . . . . . . . . : 7 Temmuz 2026 Salç 12:21:36
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.237.254
    DHCPv6 IAID . . . . . . . . . . . : 738218070
@@ -81,18 +81,18 @@ Wireless LAN adapter Wi-Fi:
 
    Connection-specific DNS Suffix  . : 
    Description . . . . . . . . . . . : Intel(R) Dual Band Wireless-AC 7265
-   Physical Address. . . . . . . . . : DE-33-3E-D3-93-41
+   Physical Address. . . . . . . . . : D6-20-0C-D6-3A-43
    DHCP Enabled. . . . . . . . . . . : Yes
    Autoconfiguration Enabled . . . . : Yes
-   Link-local IPv6 Address . . . . . : fe80::b246:4c4a:84c0:8a15%9(Preferred) 
-   IPv4 Address. . . . . . . . . . . : 192.168.1.126(Preferred) 
+   Link-local IPv6 Address . . . . . : fe80::4abe:adfe:5811:fb60%9(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.1.129(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 30 Haziran 2026 Salç 17:47:03
-   Lease Expires . . . . . . . . . . : 1 Temmuz 2026 Äarüamba 17:46:58
+   Lease Obtained. . . . . . . . . . : 7 Temmuz 2026 Salç 11:51:43
+   Lease Expires . . . . . . . . . . : 8 Temmuz 2026 Äarüamba 11:51:37
    Default Gateway . . . . . . . . . : 192.168.1.1
    DHCP Server . . . . . . . . . . . : 192.168.1.1
-   DHCPv6 IAID . . . . . . . . . . . : 165557054
-   DHCPv6 Client DUID. . . . . . . . : 00-03-00-01-DE-33-3E-D3-93-41
+   DHCPv6 IAID . . . . . . . . . . . : 165027852
+   DHCPv6 Client DUID. . . . . . . . : 00-03-00-01-D6-20-0C-D6-3A-43
    DNS Servers . . . . . . . . . . . : 192.168.1.1
                                        0.0.0.0
    NetBIOS over Tcpip. . . . . . . . : Enabled
