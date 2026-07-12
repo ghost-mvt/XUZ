@@ -5,7 +5,7 @@ Windows IP Configuration
 Ethernet adapter Ethernet 3:
 
    Connection-specific DNS Suffix  . : gre
-   Link-local IPv6 Address . . . . . : fe80::f4e1:ae25:aea9:8bdd%13
-   IPv4 Address. . . . . . . . . . . : 192.168.7.102
+   Link-local IPv6 Address . . . . . : fe80::4976:1297:6130:5307%13
+   IPv4 Address. . . . . . . . . . . : 192.168.2.103
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Default Gateway . . . . . . . . . : 192.168.7.1
+   Default Gateway . . . . . . . . . : 192.168.2.1
