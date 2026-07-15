@@ -88,7 +88,7 @@ Wireless LAN adapter Wi-Fi:
    IPv4 Address. . . . . . . . . . . : 192.168.1.129(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
    Lease Obtained. . . . . . . . . . : 15 Temmuz 2026 Äarüamba 20:11:37
-   Lease Expires . . . . . . . . . . : 16 Temmuz 2026 Perüembe 20:11:33
+   Lease Expires . . . . . . . . . . : 16 Temmuz 2026 Perüembe 20:11:34
    Default Gateway . . . . . . . . . : 192.168.1.1
    DHCP Server . . . . . . . . . . . : 192.168.1.1
    DHCPv6 IAID . . . . . . . . . . . : 165027852
