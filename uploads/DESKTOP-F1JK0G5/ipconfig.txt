@@ -1,11 +1,29 @@
-﻿
+
 Windows IP Configuration
 
+   Host Name . . . . . . . . . . . . : DESKTOP-F1JK0G5
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : gre
 
 Ethernet adapter Ethernet 3:
 
    Connection-specific DNS Suffix  . : gre
-   Link-local IPv6 Address . . . . . : fe80::4976:1297:6130:5307%13
-   IPv4 Address. . . . . . . . . . . : 192.168.2.103
+   Description . . . . . . . . . . . : Red Hat VirtIO Ethernet Adapter
+   Physical Address. . . . . . . . . : 52-54-00-A6-A8-A4
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::a863:3c99:f09c:ca69%13(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.8.101(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Default Gateway . . . . . . . . . : 192.168.2.1
+   Lease Obtained. . . . . . . . . . : Friday, May 22, 2026 7:08:48 AM
+   Lease Expires . . . . . . . . . . : Thursday, July 16, 2026 2:49:43 AM
+   Default Gateway . . . . . . . . . : 192.168.8.1
+   DHCP Server . . . . . . . . . . . : 192.168.8.1
+   DHCPv6 IAID . . . . . . . . . . . : 374494224
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-28-EC-B7-D3-00-15-5D-38-01-0B
+   DNS Servers . . . . . . . . . . . : 1.1.1.1
+                                       8.8.8.8
+   NetBIOS over Tcpip. . . . . . . . : Enabled
