@@ -44,8 +44,8 @@ Ethernet adapter VMware Network Adapter VMnet1:
    Link-local IPv6 Address . . . . . : fe80::58c1:e2eb:bc67:b4ca%6(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.101.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 3 Aßustos 2026 Pazartesi 09:43:11
-   Lease Expires . . . . . . . . . . : 3 Aßustos 2026 Pazartesi 10:13:11
+   Lease Obtained. . . . . . . . . . : 11 Aßustos 2026 Salç 12:42:02
+   Lease Expires . . . . . . . . . . : 11 Aßustos 2026 Salç 13:12:02
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.101.254
    DHCPv6 IAID . . . . . . . . . . . : 721440854
@@ -65,8 +65,8 @@ Ethernet adapter VMware Network Adapter VMnet8:
    Link-local IPv6 Address . . . . . : fe80::ec3a:7929:5e17:a561%11(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.237.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 3 Aßustos 2026 Pazartesi 09:43:11
-   Lease Expires . . . . . . . . . . : 3 Aßustos 2026 Pazartesi 10:13:11
+   Lease Obtained. . . . . . . . . . : 11 Aßustos 2026 Salç 12:42:02
+   Lease Expires . . . . . . . . . . : 11 Aßustos 2026 Salç 13:12:02
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.237.254
    DHCPv6 IAID . . . . . . . . . . . : 738218070
@@ -87,8 +87,8 @@ Wireless LAN adapter Wi-Fi:
    Link-local IPv6 Address . . . . . : fe80::bb31:6868:d4c8:19f1%9(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.1.120(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 3 Aßustos 2026 Pazartesi 09:43:19
-   Lease Expires . . . . . . . . . . : 4 Aßustos 2026 Salç 09:43:18
+   Lease Obtained. . . . . . . . . . : 11 Aßustos 2026 Salç 12:42:10
+   Lease Expires . . . . . . . . . . : 12 Aßustos 2026 Äarüamba 12:42:20
    Default Gateway . . . . . . . . . : 192.168.1.1
    DHCP Server . . . . . . . . . . . : 192.168.1.1
    DHCPv6 IAID . . . . . . . . . . . : 156942595
