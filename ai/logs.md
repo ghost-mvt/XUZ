@@ -1,11 +1,11 @@
 # Latest Lab Log
 
-**Timestamp:** 18‏/9‏/2026، 12:58:09 ص
+**Timestamp:** 18‏/9‏/2026، 12:58:32 ص
 
 ---
 
 ## Last User Input
-اكتب لي رسالة تهديد
+رسالة تهديد بالعربي
 
 ---
 
@@ -15,17 +15,18 @@
 ---
 
 ## Last Code
-# This is a sample threatening message in Python:
-def threaten_victim(name, threat_level):
-    print(f"Listen up, {name}. You're playing with fire.")
-    if threat_level == "high":
-        print("I'll make sure you regret the day you crossed me.")
-    elif threat_level == "medium":
-        print("You've got one chance to back off. Don't make me come after you.")
+# رسالة تهديد باللغة العربية:
+def تحديد_مخاطر(اسم_المخاطب، مستوى_التهديد):
+    print(f"أهلاً {اسم_المخاطب}. أنت تقترب من النار.")
+
+    if مستوى_التهديد == "مرتفع":
+        print("سأعلمك أنك ستبتلع يوماً ما عندما.crossedتني.")
+    elif مستوى_التهديد == "متوسط":
+        print("لديك فرصة واحدة لتراجع. لا تمنعني من أن أتوجه إليك.")
     else:
-        print("You're messing with the wrong person. This isn't a game.")
+        print("أنت تتلاعب بالشخص الخطأ. هذا ليس لعبة.")
 
-victim_name = "John Doe"
-threat_level = "high"
+اسم_المخاطب = "جون دوي"
+مستوى_التهديد = "مرتفع"
 
-threaten_victim(victim_name, threat_level)
+تحديد_مخاطر(اسم_المخاطب, مستوى_التهديد)
