@@ -6,6 +6,7 @@ Windows IP Configuration
    Node Type . . . . . . . . . . . . : Hybrid
    IP Routing Enabled. . . . . . . . : No
    WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : Home
 
 Ethernet adapter Ethernet:
 
@@ -16,7 +17,7 @@ Ethernet adapter Ethernet:
    DHCP Enabled. . . . . . . . . . . : Yes
    Autoconfiguration Enabled . . . . : Yes
 
-Wireless LAN adapter Yerel Aß Baßlantçsç* 1:
+Wireless LAN adapter Yerel Aß Baßlantçsç* 8:
 
    Media State . . . . . . . . . . . : Media disconnected
    Connection-specific DNS Suffix  . : 
@@ -31,7 +32,7 @@ Wireless LAN adapter Yerel Aß Baßlantçsç* 10:
    Connection-specific DNS Suffix  . : 
    Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
    Physical Address. . . . . . . . . : 1A-5E-0F-6F-80-A6
-   DHCP Enabled. . . . . . . . . . . : No
+   DHCP Enabled. . . . . . . . . . . : Yes
    Autoconfiguration Enabled . . . . : Yes
 
 Ethernet adapter VMware Network Adapter VMnet1:
@@ -41,15 +42,15 @@ Ethernet adapter VMware Network Adapter VMnet1:
    Physical Address. . . . . . . . . : 00-50-56-C0-00-01
    DHCP Enabled. . . . . . . . . . . : Yes
    Autoconfiguration Enabled . . . . : Yes
-   Link-local IPv6 Address . . . . . : fe80::58c1:e2eb:bc67:b4ca%6(Preferred) 
+   Link-local IPv6 Address . . . . . : fe80::58c1:e2eb:bc67:b4ca%4(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.101.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 11 Aßustos 2026 Salç 12:42:02
-   Lease Expires . . . . . . . . . . : 11 Aßustos 2026 Salç 13:12:02
+   Lease Obtained. . . . . . . . . . : 21 EylÅl 2026 Pazartesi 14:10:31
+   Lease Expires . . . . . . . . . . : 21 EylÅl 2026 Pazartesi 14:40:30
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.101.254
    DHCPv6 IAID . . . . . . . . . . . : 721440854
-   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-27-41-98-00-50-7B-9D-7B-62-3B
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-32-3F-FE-28-18-5E-0F-6F-80-A6
    DNS Servers . . . . . . . . . . . : fec0:0:0:ffff::1%1
                                        fec0:0:0:ffff::2%1
                                        fec0:0:0:ffff::3%1
@@ -62,15 +63,15 @@ Ethernet adapter VMware Network Adapter VMnet8:
    Physical Address. . . . . . . . . : 00-50-56-C0-00-08
    DHCP Enabled. . . . . . . . . . . : Yes
    Autoconfiguration Enabled . . . . : Yes
-   Link-local IPv6 Address . . . . . : fe80::ec3a:7929:5e17:a561%11(Preferred) 
+   Link-local IPv6 Address . . . . . : fe80::ec3a:7929:5e17:a561%6(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.237.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 11 Aßustos 2026 Salç 12:42:02
-   Lease Expires . . . . . . . . . . : 11 Aßustos 2026 Salç 13:12:02
+   Lease Obtained. . . . . . . . . . : 21 EylÅl 2026 Pazartesi 14:10:31
+   Lease Expires . . . . . . . . . . : 21 EylÅl 2026 Pazartesi 14:40:30
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.237.254
    DHCPv6 IAID . . . . . . . . . . . : 738218070
-   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-27-41-98-00-50-7B-9D-7B-62-3B
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-32-3F-FE-28-18-5E-0F-6F-80-A6
    DNS Servers . . . . . . . . . . . : fec0:0:0:ffff::1%1
                                        fec0:0:0:ffff::2%1
                                        fec0:0:0:ffff::3%1
@@ -79,20 +80,20 @@ Ethernet adapter VMware Network Adapter VMnet8:
 
 Wireless LAN adapter Wi-Fi:
 
-   Connection-specific DNS Suffix  . : 
+   Connection-specific DNS Suffix  . : Home
    Description . . . . . . . . . . . : Intel(R) Dual Band Wireless-AC 7265
-   Physical Address. . . . . . . . . : 5A-C1-03-E5-17-5A
+   Physical Address. . . . . . . . . : 8E-F6-3B-CF-E8-4B
    DHCP Enabled. . . . . . . . . . . : Yes
    Autoconfiguration Enabled . . . . : Yes
-   Link-local IPv6 Address . . . . . : fe80::bb31:6868:d4c8:19f1%9(Preferred) 
-   IPv4 Address. . . . . . . . . . . : 192.168.1.120(Preferred) 
+   Link-local IPv6 Address . . . . . : fe80::dea7:aea8:f9f2:c933%8(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.1.43(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 11 Aßustos 2026 Salç 12:42:10
-   Lease Expires . . . . . . . . . . : 12 Aßustos 2026 Äarüamba 12:42:20
-   Default Gateway . . . . . . . . . : 192.168.1.1
+   Lease Obtained. . . . . . . . . . : 21 EylÅl 2026 Pazartesi 14:10:34
+   Lease Expires . . . . . . . . . . : 22 EylÅl 2026 Salç 14:10:32
+   Default Gateway . . . . . . . . . : fe80::1%8
+                                       192.168.1.1
    DHCP Server . . . . . . . . . . . : 192.168.1.1
-   DHCPv6 IAID . . . . . . . . . . . : 156942595
-   DHCPv6 Client DUID. . . . . . . . : 00-03-00-01-5A-C1-03-E5-17-5A
+   DHCPv6 IAID . . . . . . . . . . . : 150130155
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-32-3F-FE-28-18-5E-0F-6F-80-A6
    DNS Servers . . . . . . . . . . . : 192.168.1.1
-                                       0.0.0.0
    NetBIOS over Tcpip. . . . . . . . : Enabled
