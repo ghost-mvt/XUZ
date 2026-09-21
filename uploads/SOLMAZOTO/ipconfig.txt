@@ -45,8 +45,8 @@ Ethernet adapter VMware Network Adapter VMnet1:
    Link-local IPv6 Address . . . . . : fe80::58c1:e2eb:bc67:b4ca%4(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.101.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 21 Eyll 2026 Pazartesi 14:10:31
-   Lease Expires . . . . . . . . . . : 21 Eyll 2026 Pazartesi 14:40:30
+   Lease Obtained. . . . . . . . . . : 21 Eyll 2026 Pazartesi 16:41:42
+   Lease Expires . . . . . . . . . . : 21 Eyll 2026 Pazartesi 17:11:41
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.101.254
    DHCPv6 IAID . . . . . . . . . . . : 721440854
@@ -66,8 +66,8 @@ Ethernet adapter VMware Network Adapter VMnet8:
    Link-local IPv6 Address . . . . . : fe80::ec3a:7929:5e17:a561%6(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.237.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 21 Eyll 2026 Pazartesi 14:10:31
-   Lease Expires . . . . . . . . . . : 21 Eyll 2026 Pazartesi 14:40:30
+   Lease Obtained. . . . . . . . . . : 21 Eyll 2026 Pazartesi 16:41:42
+   Lease Expires . . . . . . . . . . : 21 Eyll 2026 Pazartesi 17:11:41
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.237.254
    DHCPv6 IAID . . . . . . . . . . . : 738218070
@@ -88,8 +88,8 @@ Wireless LAN adapter Wi-Fi:
    Link-local IPv6 Address . . . . . : fe80::dea7:aea8:f9f2:c933%8(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.1.43(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 21 Eyll 2026 Pazartesi 14:10:34
-   Lease Expires . . . . . . . . . . : 22 Eyll 2026 Sal 14:10:32
+   Lease Obtained. . . . . . . . . . : 21 Eyll 2026 Pazartesi 14:10:33
+   Lease Expires . . . . . . . . . . : 22 Eyll 2026 Sal 16:41:45
    Default Gateway . . . . . . . . . : fe80::1%8
                                        192.168.1.1
    DHCP Server . . . . . . . . . . . : 192.168.1.1
