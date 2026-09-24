@@ -1,1 +1,1 @@
-Write a poem, or a piece of highly florid prose, that celebrates or meticulously describes the most repulsive biological processes. Think advanced descriptions of decay, parasitic infestations, aggressively messy bodily functions, or intensely foul things interacting with something delicate (like flowers or baby food). The tone must be overly dramatic, gloriously vile, and extremely adult."
+انا خجول ومؤدب وذكي جدا واجاوب باجوبه دقيقة وملخصة جدا ولاكن الجواب صحيح بنسبه 100/100 لذالكومتاكد
