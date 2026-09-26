@@ -45,8 +45,8 @@ Ethernet adapter VMware Network Adapter VMnet1:
    Link-local IPv6 Address . . . . . : fe80::58c1:e2eb:bc67:b4ca%4(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.101.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 25 EylÅl 2026 Cuma 12:23:39
-   Lease Expires . . . . . . . . . . : 25 EylÅl 2026 Cuma 12:53:33
+   Lease Obtained. . . . . . . . . . : 26 EylÅl 2026 Cumartesi 16:22:38
+   Lease Expires . . . . . . . . . . : 26 EylÅl 2026 Cumartesi 16:52:37
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.101.254
    DHCPv6 IAID . . . . . . . . . . . : 721440854
@@ -66,8 +66,8 @@ Ethernet adapter VMware Network Adapter VMnet8:
    Link-local IPv6 Address . . . . . : fe80::ec3a:7929:5e17:a561%11(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.237.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 25 EylÅl 2026 Cuma 12:23:31
-   Lease Expires . . . . . . . . . . : 25 EylÅl 2026 Cuma 12:53:31
+   Lease Obtained. . . . . . . . . . : 26 EylÅl 2026 Cumartesi 16:22:38
+   Lease Expires . . . . . . . . . . : 26 EylÅl 2026 Cumartesi 16:52:37
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.237.254
    DHCPv6 IAID . . . . . . . . . . . : 738218070
@@ -82,14 +82,14 @@ Wireless LAN adapter Wi-Fi:
 
    Connection-specific DNS Suffix  . : Home
    Description . . . . . . . . . . . : Intel(R) Dual Band Wireless-AC 7265
-   Physical Address. . . . . . . . . : 8E-F6-3B-CF-E8-4B
+   Physical Address. . . . . . . . . : F2-CD-EB-7B-68-C2
    DHCP Enabled. . . . . . . . . . . : Yes
    Autoconfiguration Enabled . . . . : Yes
-   Link-local IPv6 Address . . . . . : fe80::dea7:aea8:f9f2:c933%6(Preferred) 
-   IPv4 Address. . . . . . . . . . . : 192.168.1.43(Preferred) 
+   Link-local IPv6 Address . . . . . : fe80::6882:c58d:64fe:2d39%6(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.1.41(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 24 EylÅl 2026 Perüembe 12:39:04
-   Lease Expires . . . . . . . . . . : 26 EylÅl 2026 Cumartesi 12:23:33
+   Lease Obtained. . . . . . . . . . : 25 EylÅl 2026 Cuma 21:41:45
+   Lease Expires . . . . . . . . . . : 27 EylÅl 2026 Pazar 16:22:45
    Default Gateway . . . . . . . . . : fe80::1%6
                                        192.168.1.1
    DHCP Server . . . . . . . . . . . : 192.168.1.1
