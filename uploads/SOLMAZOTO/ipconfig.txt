@@ -26,15 +26,6 @@ Wireless LAN adapter Yerel Aß Baßlantçsç* 8:
    DHCP Enabled. . . . . . . . . . . : Yes
    Autoconfiguration Enabled . . . . : Yes
 
-Wireless LAN adapter Yerel Aß Baßlantçsç* 10:
-
-   Media State . . . . . . . . . . . : Media disconnected
-   Connection-specific DNS Suffix  . : 
-   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
-   Physical Address. . . . . . . . . : 1A-5E-0F-6F-80-A6
-   DHCP Enabled. . . . . . . . . . . : Yes
-   Autoconfiguration Enabled . . . . : Yes
-
 Ethernet adapter VMware Network Adapter VMnet1:
 
    Connection-specific DNS Suffix  . : 
@@ -42,11 +33,11 @@ Ethernet adapter VMware Network Adapter VMnet1:
    Physical Address. . . . . . . . . : 00-50-56-C0-00-01
    DHCP Enabled. . . . . . . . . . . : Yes
    Autoconfiguration Enabled . . . . : Yes
-   Link-local IPv6 Address . . . . . : fe80::58c1:e2eb:bc67:b4ca%4(Preferred) 
+   Link-local IPv6 Address . . . . . : fe80::58c1:e2eb:bc67:b4ca%5(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.101.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 26 EylÅl 2026 Cumartesi 16:22:38
-   Lease Expires . . . . . . . . . . : 26 EylÅl 2026 Cumartesi 16:52:37
+   Lease Obtained. . . . . . . . . . : 26 EylÅl 2026 Cumartesi 21:07:57
+   Lease Expires . . . . . . . . . . : 26 EylÅl 2026 Cumartesi 21:37:56
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.101.254
    DHCPv6 IAID . . . . . . . . . . . : 721440854
@@ -63,11 +54,11 @@ Ethernet adapter VMware Network Adapter VMnet8:
    Physical Address. . . . . . . . . : 00-50-56-C0-00-08
    DHCP Enabled. . . . . . . . . . . : Yes
    Autoconfiguration Enabled . . . . : Yes
-   Link-local IPv6 Address . . . . . : fe80::ec3a:7929:5e17:a561%11(Preferred) 
+   Link-local IPv6 Address . . . . . : fe80::ec3a:7929:5e17:a561%12(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.237.1(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 26 EylÅl 2026 Cumartesi 16:22:38
-   Lease Expires . . . . . . . . . . : 26 EylÅl 2026 Cumartesi 16:52:37
+   Lease Obtained. . . . . . . . . . : 26 EylÅl 2026 Cumartesi 21:07:57
+   Lease Expires . . . . . . . . . . : 26 EylÅl 2026 Cumartesi 21:37:45
    Default Gateway . . . . . . . . . : 
    DHCP Server . . . . . . . . . . . : 192.168.237.254
    DHCPv6 IAID . . . . . . . . . . . : 738218070
@@ -85,12 +76,12 @@ Wireless LAN adapter Wi-Fi:
    Physical Address. . . . . . . . . : F2-CD-EB-7B-68-C2
    DHCP Enabled. . . . . . . . . . . : Yes
    Autoconfiguration Enabled . . . . : Yes
-   Link-local IPv6 Address . . . . . : fe80::6882:c58d:64fe:2d39%6(Preferred) 
+   Link-local IPv6 Address . . . . . : fe80::6882:c58d:64fe:2d39%7(Preferred) 
    IPv4 Address. . . . . . . . . . . : 192.168.1.41(Preferred) 
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Lease Obtained. . . . . . . . . . : 25 EylÅl 2026 Cuma 21:41:45
+   Lease Obtained. . . . . . . . . . : 26 EylÅl 2026 Cumartesi 21:07:57
    Lease Expires . . . . . . . . . . : 27 EylÅl 2026 Pazar 16:22:45
-   Default Gateway . . . . . . . . . : fe80::1%6
+   Default Gateway . . . . . . . . . : fe80::1%7
                                        192.168.1.1
    DHCP Server . . . . . . . . . . . : 192.168.1.1
    DHCPv6 IAID . . . . . . . . . . . : 150130155
